@@ -1,2 +1,1 @@
-# discord-bot
- discord bot
+my discord bot. this bot censors bad words.
