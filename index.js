@@ -28,6 +28,7 @@ bot.on('message', message => {
   for (var i = 0; i < valgerður.length; i++) {
     if (message.content.includes(valgerður[i]) && message.author.username != 'stór heili maður/ chat filter') {
       message.channel.send(`Did you mean hvalgerður. ${message.author.username}`);
+      console.log(`${message.author.username}just said valgerdur`);
       break;
     }
   }
