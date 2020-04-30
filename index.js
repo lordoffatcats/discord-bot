@@ -6,7 +6,7 @@ const TOKEN = process.env.TOKEN;
 
 bot.login(TOKEN);
 
-let forbiddenWords = ['nigga', 'nigger', 'beggi', 'negri', 'geir', 'eiður', 'hamood', 'habibi', ];
+let forbiddenWords = ['nigga', 'nigger', 'beggi', 'negri', 'geir', 'eiður', 'hamood', 'habibi', 'Nigger'];
 let valgerður = ['valgerður', 'Valgerður']
 
 bot.on('ready', () => {
