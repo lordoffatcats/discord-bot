@@ -17,19 +17,16 @@ bot.on('message', message => {
     message.channel.send(`stop saying bad words ${message.author.username}`);
     console.log(`Removed ${message.author.username}'s Message as it had a forbidden word in it.`);
     message.delete()
-    break;
   }})
 
 bot.on('message', message => {
   if(config.VALGERDUR.some(word => message.content.toLowerCase().includes(word))){
     message.channel.send(`did you mean hvalgerður ${message.author.username}`);
     console.log(`${message.author.username} said valgerður`);
-    break;
   }})
 
 bot.on('message', message => {
   const randomSimp = SIMPS[Math.floor(Math.random() * array.length)];
   if(config.SIMP.some(word => message.content.toLowerCase().includes(word))){
     message.channel.send(`did you mean ${randomSimp}`);
-    break;
   }})
