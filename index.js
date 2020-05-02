@@ -21,7 +21,7 @@ bot.on('message', message => {
   }})
 
 bot.on('message', message => {
-  if(config.VALGERDUR.some(word => message.content.toLowerCase().includes(word))){
+  if((config.VALGERDUR.some(word => message.content.toLowerCase().includes(word))) || message.author.username !== "stór heili maður/ chat filter"){
     message.channel.send(`did you mean hvalgerður ${message.author.username}`);
     console.log(`${message.author.username} said valgerður`);
   }})
