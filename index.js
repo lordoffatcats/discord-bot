@@ -30,4 +30,5 @@ bot.on('message', message => {
   const randomSimp = SIMPS[Math.floor(Math.random() * SIMPS.length)];
   if(config.SIMP.some(word => message.content.toLowerCase().includes(word))){
     message.channel.send(`did you mean ${randomSimp}`);
+    console.log(`${message.author.username} said simp`);
   }})
