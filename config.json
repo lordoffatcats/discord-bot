@@ -1,5 +1,5 @@
 {
-	"FILTER_LIST" : ['nigga', 'nigger', 'beggi', 'negri', 'geir', 'hamood', 'habibi', 'jói','siggi' ]
-  "VALGERDUR" : ['valgerður', 'valgerdur']
-  "SIMP" : ['simp']
+	"FILTER_LIST" : ["nigga", "nigger", "beggi", "negri", "geir", "hamood", "habibi", "jói","siggi" ],
+  "VALGERDUR" : ["valgerður", "valgerdur"],
+  "SIMP" : ["simp"]
 }
