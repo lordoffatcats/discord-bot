@@ -11,7 +11,7 @@ bot.on('ready', () => {
   console.info(`Logged in as ${bot.user.tag}!`);
 });
 
-var SIMPS = ['óskar', 'sjonni', 'pétur']
+var SIMPS = ['jóhannes']
 
 bot.on('message', message => {
   if(config.FILTER_LIST.some(word => message.content.toLowerCase().includes(word))){
