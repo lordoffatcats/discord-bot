@@ -32,3 +32,15 @@ bot.on('message', message => {
     message.channel.send(`did you mean ${randomSimp}`);
     console.log(`${message.author.username} said simp`);
   }})
+
+bot.on('message', message => {
+  if(config.HVERAGERDI.some(word => message.content.toLowerCase().includes(word))){
+    message.channel.send(`did you mean birgir`);
+    console.log(`${message.author.username} said hveragerdi`);
+  }})
+
+bot.on('message', message => {
+  if(config.ANGER.some(word => message.content.toLowerCase().includes(word))){
+    message.channel.send(`did you mean eiður`);
+    console.log(`${message.author.username} said anger`);
+  }})
