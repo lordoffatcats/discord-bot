@@ -44,3 +44,15 @@ bot.on('message', message => {
     message.channel.send(`did you mean eiður`);
     console.log(`${message.author.username} said anger`);
   }})
+
+bot.on('message', message => {
+  if(config.ANGY.some(word => message.content.toLowerCase().includes(word))){
+    message.channel.send(`https://tenor.com/view/im-angy-angry-no-talk-with-me-sloaney-panda-gif-14286263`);
+    console.log(`${message.author.username} said angy`);
+  }})
+
+bot.on('message', message => {
+  if(config.EGG.some(word => message.content.toLowerCase().includes(word))){
+    message.channel.send(`:egg:`);
+    console.log(`${message.author.username} said egg`);
+    }})
