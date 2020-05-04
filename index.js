@@ -53,6 +53,6 @@ bot.on('message', message => {
 
 bot.on('message', message => {
   if(config.EGG.some(word => message.content.toLowerCase().includes(word))){
-    message.channel.send(`:egg:`);
+    message.channel.send(`egg`);
     console.log(`${message.author.username} said egg`);
     }})
